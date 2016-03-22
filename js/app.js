@@ -11,6 +11,7 @@ $(document).ready(function(){
   	  playHadouken();
   		$('.ryu-ready').hide();
   		$('.ryu-throwing').show();
+      $('.first-step, .second-step').hide();
   		$('.hadouken').finish().show()
   	.animate(
     	{'left': '1020px'},
@@ -45,11 +46,7 @@ $(document).ready(function(){
   
 });
 
-//definately confused on where the final " })" should be
-// and where to put and NOT to put the semi colon
 
-//where should I put:
-// $('.instructions').show();
 
 function playHadouken() {
     $('#hadouken-sound')[0].volume = 0.5;
